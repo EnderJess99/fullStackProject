@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>McRaven</title>
+    <link href="Style/home-style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Eagle+Lake&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+  </head>
+  <div id="tree">
+  <body>
+    
+    <header>
+      <div class="header-image">
+        <img src="images/Group 1.png">
+      </div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events-rewrite.html">Events</a></li>
+            <li><a href="history-rewrite.html">History</a></li>
+            <li><a href="ghosts-rewrite.html">Ghosts</a></li>
+            <li><a href="index.php">Raven Club</a></li>    
+              <!--drop down start-->
+          <div class="dropdown">
+
+          <section class="dropdown-button">
+            <li><a href="tickets-rewrite.html">Tickets</a></li>
+          </section>
+
+          <section class="dropdown-content">
+            <li><a href="faq-rewrite.html">FAQs</a></li>
+          </section>
+        </div>
+
+          
+
+        </ul>    
+        </nav>
+    </header>
+    
+    <section class="slideshow">
+      <!--Slideshow Container-->
+        <div class="slidecontainer">
+          <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img src="images/front-sized.jpg" alt="Front of McRaven House">
+            <div class="description">Welcome to McRaven Tour Home</div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img src="images/mcraven-parlor.jpg" alt="McRaven Parlor Room">
+            <div class="description">1849 Parlor Room</div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img src="images/mcraven-mary.jpg" alt="Mary Elizabeth Howard's Room">
+            <div class="description">1836 Bedroom</div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img src="images/mary-gloves.jpg" alt="Mary Elizabeth's lace gloves">
+            <div class="description">Mrs. Mary Elizabeth Howard's beautiful lace gloves</div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img src="images/mcraven-civilwargal.jpg" alt="The Civil War Gallery">
+            <div class="description">Civil War artifacts left at a former Confedrate field hospital</div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+            <img src="images/toys.jpg" alt="Murray Toy Room">
+            <div class="description">Toys made my Mr. William Murray for his children</div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+            <img src="images/mcraven-andrew.jpg" alt="Andrew Glass' Room">
+            <div class="description">The oldest part of the home - standing since 1797</div>
+          </div>
+        
+          <!--Next and Previous-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+
+          // Next/previous controls
+          function plusSlides(n) {
+          showSlides(slideIndex += n);
+          }
+
+          // Thumbnail image controls
+          function currentSlide(n) {
+          showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          }
+        </script>
+    </section>
+<!--Slideshow End-->
+    <main>  
+        
+    <section class="content">
+
+     <div class="location-hours">
+
+      <div class="location"> <!--location-->
+        <h3 id="title">Located at:</h3>
+          <p>1445 Harrison St.<br>Vicksburg, MS 39180</p>
+          <map>
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" 
+              marginwidth="0" src="https://maps.google.com/maps?width=596&amp;height=400&amp;hl=en&amp;q=1445 Harrison Street Vicksburg 
+              Mississippi&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">
+                Piratebay</a></div><style>.mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas 
+                {overflow:hidden;background:none!important;width:90%;height:320px;margin:auto;}.gmap_iframe {height:400px!important;}</style>
+                </div>
+          </map>
+      </div>
+
+      <div class="hours"> <!--hours-->
+        <h3 id="title">Hours of Operation:</h3>
+        <section class="hour-container">
+          
+         <span class="history-hours">
+          <h4>History Tours</h4>
+            <dl>
+              <dt>Monday-Saturday:</dt>
+              <dd>10:00am - 4:30pm</dd><br>
+              <dt>Sunday:</dt>
+              <dd>1:00pm - 4:30pm</dd>
+            </dl>
+         </span>
+        
+          
+         <span class="haunted-hours">
+           <h4>Haunted Tours</h4>
+            <dl>
+              <dt>Friday, Saturday, & Sunday:</dt>
+              <dd>7:00pm & 8:30pm</dd>
+            </dl>
+         </span>
+        </section>
+         <h5>*No Reservations Required</h5>
+        <!--put "Get Tickets!" button here-->
+          <button class= "button ticket-button"><a href="tickets-rewrite.html">Get Tickets!</a></button>
+      </div>
+
+     </div>
+      <div class="info">
+        <h3 id="title">What is McRaven Tour Home?</h3>
+          <p>Originally built in 1797, McRaven House remains one of the most popular attractions in the state of Mississippi. With its 200-year history, McRaven 
+            has come to be known as "The Time Capsule of the South" according to National Geographic Magazine, and has no shortage of pre-civil war to post-civil war 
+            artifacts and architecture. <br>
+            McRaven also harbors a frightening past. It has come to be known as "The Most Haunted House in Mississippi." Click <a href="ghosts-rewrite.html">here</a> to learn more about the inhabitants that never 
+            truly left this beautiful home.  
+          </p>
+
+          <p><a href="history-rewrite.html">Learn more</a> about our history.</p>
+      </div>
+
+      <div class="investigate">
+        <h3 id="title">We Offer Ghost Investigations!</h3>
+        <p>Next Public Ghost Investigation:<br>Saturday, August 8th 2023</p>
+          <p id="hide">Want to experience McRaven's darker past? Join us on one of our monthly Ghost Investigations.</p>
+
+          <p><a href="ghosts-rewrite.html">Learn more</a> about investigations.</p>
+      </div>
+
+      <div class="raven-club">
+        <h3 id="title">Join the Raven Club!</h3>
+        <p>Become a member of the Raven club to recieve special perks and deals at the Mcraven Tour Home.<br>See your options <a href="index.php" style="color: #9D50BB;">Here</a> </p>
+      </div>
+    </section>
+    </main>
+
+  </div>
+
+    <footer style="text-align:center">
+        <p>&copy; Jessica Hasty || Contact Us: manager@mcravenhouse.com | 601-501-1336 || <a href="index.html" style="color: white">Back To Top</a></p>
+        <!--social media links here-->
+        <a href="https://www.facebook.com/McRavenTourHome/" class="fa fa-facebook" target="_blank" title="facebook website"></a>
+        <a href="https://twitter.com/McRavenTourHome" class="fa fa-twitter" target="_blank" title="twitter website"></a>
+    </footer>
+</div>
+  </body>
+  </html>

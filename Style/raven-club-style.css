@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #3f204d, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #3f204d, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*****Default Content*****/
+
+#tree {
+    background: url(../images/Group\ 2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+header img {
+    width: 25%;
+    display: block;
+    margin: 2em auto;
+}
+
+/*******************NAVIGATION**********************/
+
+@media screen 
+  and (min-device-width: 1200px)  
+  and (-webkit-min-device-pixel-ratio: 1) { 
+nav {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+}
+li a {
+    display: block;
+    text-align: center;
+    background-color: #1A1A1A;
+    color: white;
+    font-size: 1.3em;
+    padding: 1em;
+    text-decoration: none;
+}
+li a:hover {
+    opacity: 0.7; 
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+.dropdown-button {
+    background-color: #1A1A1A;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-button a {
+    color: white;
+    background-color: #1A1A1A;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+.dropdown-content a {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    background-color: #1A1A1A;
+    color: white;
+}
+.dropdown:hover .dropdown-button {
+    opacity: 0.7;
+}
+.dropdown-content a:hover {
+    opacity: 0.7;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+}
+
+main h1 {
+    width: 30%;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3em;
+    padding-top: 2%;
+    color: #1A1A1A;
+}
+.memberships {
+    background-color: #1A1A1A;
+    color: white;
+    width: 80%;
+    padding: 1%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #512A61;
+    text-align: center;
+}
+.memberships h3 {
+    font-size: 2em;
+    font-family:'Eagle Lake', cursive;
+}
+.memberships p {
+    font-size: 1.6em;
+}
+.memberships h4 {
+    font-size: 1.5em;
+}
+#MemFlex {
+    display:flex;
+    justify-content: space-around;
+}
+
+
+/********Footer*******/
+footer p {
+    font-size: 1.5em;
+    color: white;
+}
+.fa {
+    padding: 15px;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+} 
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/*************************************SMALL SCREEN********************************/
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 1200px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    #tree {
+        background: none;
+    }
+    header img {
+        max-width: 100%;
+        width: 50%;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0.5em;
+        padding: 0;
+        overflow: hidden;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    nav li {
+        float: left;
+        display: inline;
+        width: 33.332%;
+        border: 1px solid black;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        text-decoration: none;
+    }
+    nav li a:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /**SMALL SCREEN CONTENT**/
+    main h1 {
+        width: 100%;
+        font-size: 2em;
+    }
+    .questions {
+        width: 95%;
+    }
+}

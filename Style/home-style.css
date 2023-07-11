@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #3f204d, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #3f204d, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*****Default Content*****/
+
+#tree {
+    background: url(../images/Group\ 2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+header img {
+    width: 25%;
+    display: block;
+    margin: 2em auto;
+}
+
+/*******************NAVIGATION**********************/
+
+@media screen 
+  and (min-device-width: 1200px)  
+  and (-webkit-min-device-pixel-ratio: 1) { 
+nav {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+}
+li a {
+    display: block;
+    text-align: center;
+    background-color: #1A1A1A;
+    color: white;
+    font-size: 1.3em;
+    padding: 1em;
+    text-decoration: none;
+}
+li a:hover {
+    opacity: 0.7; 
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+.dropdown-button {
+    background-color: #1A1A1A;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-button a {
+    color: white;
+    background-color: #1A1A1A;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+.dropdown-content a {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    background-color: #1A1A1A;
+    color: white;
+}
+.dropdown:hover .dropdown-button {
+    opacity: 0.7;
+}
+.dropdown-content a:hover {
+    opacity: 0.7;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+}
+
+/*****MAIN CONTENT*****/
+
+main h1 {
+    width: 75%;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+    font-family: 'Eagle Lake', cursive;
+    text-decoration: underline;
+    font-size: 36pt;
+    padding-top: 2%;
+    color: #1A1A1A;
+}
+
+/******SLIDESHOW******/
+.slidecontainer {
+    max-width: 65%;
+    position: relative;
+    margin: 3.5% auto; 
+    border: 10px solid #1A1A1A;
+    border-radius: 10px;
+}
+.mySlides {
+    display: none;
+    width: 100%;
+    padding: 0;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    border-radius: 3px 0 0 3px;
+    right: 0;
+}
+.prev {
+    left: 0;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.description {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+}
+.description:hover {
+    display: block;
+}
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 1.5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+img {
+    width: 100%;
+}
+.slideshow {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+    /******SLIDESHOW ENDS******/
+
+    /******MAIN CONTENT******/
+
+div.container {
+    display: flex;
+    justify-content: center;
+}
+#title {
+    padding-top: 3%;
+    font-size: 2em;
+}
+.location-hours {
+    display: flex;
+    justify-content: center;
+}
+.location {
+    margin-top: 0;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #512A61;
+    color: white;
+    text-align: center;
+    width: 40%;
+    margin-right: 1%;
+}
+.location p {
+    font-size: 1.5em;
+}
+.hours {
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #512A61;
+    color: white;
+    text-align: center;
+    width: 40%;
+    margin-left: 1%;
+}
+.hours h5 {
+    font-size: 1em;
+}
+.hour-container {
+    display: flex;
+    justify-content: left;
+    font-size: 1.2em;
+    padding: 2%;
+}
+.history-hours {
+    margin: auto;
+}
+.haunted-hours {
+    margin: 0 auto;
+}
+.button {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color:  #9D50BB;
+    padding: 3%;
+    margin-bottom: 3%;
+}
+.ticket-button:hover {
+    color: black;
+    opacity: 0.7;
+}
+.ticket-button a {
+    color: white;
+}
+.hours h5 {
+    font-size: 1.3em;
+}
+.hour-container {
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    padding: 0;
+}
+.button {
+    padding: 1%;
+}
+.button a {
+    text-decoration: none;
+}
+
+.info {
+    width: 80%;
+    margin: auto;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #512A61;
+    color: white;
+    text-align: center;
+    padding: 0 1% 1% 1%;
+}
+.info p {
+    font-size: 1.6em;
+    padding: 2%;
+}
+.info a {
+    color: #9D50BB;
+    text-decoration: none;
+}
+.investigate {
+    width: 80%;
+    margin: auto;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #512A61;
+    color: white;
+    text-align: center;
+    padding: 0 1% 1% 1%;
+}
+.investigate p {
+    font-size: 1.6em;
+}
+#hide {
+    padding: 2%;
+}
+.investigate a {
+    color: #9D50BB;
+    text-decoration: none;
+}
+.raven-club {
+    width: 80%;
+    margin: auto;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #512A61;
+    color: white;
+    text-align: center;
+    padding: 0 1% 1% 1%;
+}
+.raven-club p {
+    font-size: 1.6em;
+}
+.membership-options {
+    display: flex;
+    justify-content:space-around;
+}
+
+
+
+/*****************************FOOTER********************************/
+footer p {
+font-size: 1.5em;
+color: white;
+}
+.fa {
+padding: 15px;
+font-size: 50px;
+width: 50px;
+height: 50px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+border: 2px solid black;
+}
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+} 
+.fa-twitter {
+background: #55ACEE;
+color: white;
+} 
+
+/*****************************MEDIA*******************************/
+
+/*************SMALL SCREEN************/
+
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #tree {
+        background: none;
+    }
+    header img {
+        max-width: 100%;
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+    /******NAVIGATION******/
+
+    ul {
+        list-style-type: none;
+        margin: 0.5em;
+        padding: 0;
+        overflow: hidden;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    li {
+        float: left;
+        display: inline;
+        width: 33.332%;
+        border: 1px solid black;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /**SMALL SCREEN CONTENT**/
+
+            /******SLIDESHOW******/
+
+    .slidecontainer {
+        max-width: 95%;
+        margin: 0 auto; 
+        border: 5px solid black;
+    }
+    .description {
+        font-size: 1em;
+        padding: 1%;
+    }
+    .numbertext {
+        font-size: 12px;
+        padding: 1%;
+    }
+
+        /******SLIDESHOW ENDS******/
+    
+        /******MAIN CONTENT******/
+    .location-hours{
+        display: block;
+    }
+    .location {
+        width: 95%;
+        margin: auto;
+    }  
+    .hours {
+        width: 95%;
+        padding: 0 1em;
+        margin: auto;
+    }
+    .hour-container{
+        display: block;
+        font-size: 1.5em;
+    }
+    .info {
+        width: 95%;
+    }
+    .investigate {
+        width: 95%;
+    }
+  }   
+
+  /*************************TABLET/LAPTOP HOURS CHANGE*******************/
+  @media screen 
+  and (min-device-width: 1000px)
+  and (max-device-width: 1200px) {
+
+    .location-hours{
+        display: flex;
+        width: 95%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .hour-container{
+        display: flex;
+        font-size: 1.5em;
+    }
+    .hours {
+        padding: 0;
+        margin: 0 1%;
+    }
+    .location {
+        margin: 0 1%;
+    }
+    .info {
+        width: 95%;
+    }
+    .investigate {
+        width: 95%;
+    }
+
+}
